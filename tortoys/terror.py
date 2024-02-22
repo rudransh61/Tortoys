@@ -1,0 +1,2 @@
+class TortoysError(Exception):
+    pass

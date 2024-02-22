@@ -28,7 +28,6 @@ def main():
 
     interpreter = lang.Tortoys()
     interpreter.execute(code)
-    turtle.done()
 
 if __name__ == '__main__':
     main()
