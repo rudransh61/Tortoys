@@ -2,13 +2,11 @@
 <div align="center">
     <img src="./logo.jpg" alt="logo" width="200"/>
     <h1>Tortoys</h1>
-    <p>A new programming language to write graphics fast</p>
+    <p>Its LOGO but BETTER.... A programming language over Turtle Graphics </p>
 
     [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-    [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
-    ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-
 </div>
+
 
  - A programming language made for kids to learn about programming and some turtle programming
  - Will help them to create beautiful patterns and arts
