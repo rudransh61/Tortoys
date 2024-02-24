@@ -1,5 +1,10 @@
 TITLE "Hello World"
 SPEED 1
+SET BG "blue"
+
+
+BGCOLOR "blue"
+
 SET RED "red"
 COLOR RED
 SET A 100

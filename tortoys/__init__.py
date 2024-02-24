@@ -50,6 +50,8 @@ class Tortoys:
             self.close(line_number)
         elif action == 'DONE':
             self.done(line_number)
+        elif action == 'BGCOLOR':
+            self.bgcolor(tokens,line_number)
         else:
             raise(f"Unknown command: {command} : On line number {line_number}")
 
@@ -252,6 +254,31 @@ class Tortoys:
         except :
             raise(f"Error while running CLOSE on line {line_number}")
         
+    def bgcolor(self, tokens, line_number):
+        if len(tokens) == 2:
+            value = tokens[1]
+            if value.isnumeric():
+                color = str(value)
+            elif value in self.variables:
+                color = self.variables[value]
+            else:
+                raise(f"Unknown command: Check BGCOLOR command again on line {line_number}")
+    
+            self.turtle.screen.bgcolor(color)
+        else:
+            raise(f"Unknown command: Invalid BGCOLOR command on line {line_number}")
+        # try :
+        #     if(self.variables[tokens[1]]):
+        #         self.turtle.screen.bgcolor(self.variables[tokens[1]])
+        #     else:
+        #         self.turtle.screen.bgcolor(tokens[1])
+        # except :
+        #     raise ValueError(f"There is some error in command BGCOLOR on line {line_number}")
+        # self.turtle.screen.bgcolor(tokens[1])
+        # print(len(tokens))
+
+
+    
     def done(self, line_number):
         try :
             turtle.done()

@@ -80,6 +80,14 @@ The `COLOR` command sets the color of the turtle.
 COLOR "blue"
 ```
 
+### BGCOLOR
+
+The `BGCOLOR` command sets the color of the background.
+
+```tortoys
+BGCOLOR "blue"
+```
+
 ### MOVETO
 
 The `MOVETO` command moves the turtle to a specified position.
